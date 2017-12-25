@@ -11,9 +11,13 @@
 		940B66F21FF0BC9100E5624A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 940B66F11FF0BC9100E5624A /* ViewController.swift */; };
 		940B66F41FF0BC9100E5624A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 940B66F31FF0BC9100E5624A /* Assets.xcassets */; };
 		940B66F71FF0BC9100E5624A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 940B66F51FF0BC9100E5624A /* Main.storyboard */; };
+		E38319C0013BF406A06BB1B3 /* Pods_Rekordbox_Cue_Converter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 48F8F479DCAEFC59FF99DC83 /* Pods_Rekordbox_Cue_Converter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1D30CC55DD2B9A58A65378CB /* Pods-Rekordbox Cue Converter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rekordbox Cue Converter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Rekordbox Cue Converter/Pods-Rekordbox Cue Converter.debug.xcconfig"; sourceTree = "<group>"; };
+		48F8F479DCAEFC59FF99DC83 /* Pods_Rekordbox_Cue_Converter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Rekordbox_Cue_Converter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B3DF9E5782225B89D57841F /* Pods-Rekordbox Cue Converter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Rekordbox Cue Converter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Rekordbox Cue Converter/Pods-Rekordbox Cue Converter.release.xcconfig"; sourceTree = "<group>"; };
 		940B66EC1FF0BC9100E5624A /* Rekordbox Cue Converter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rekordbox Cue Converter.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		940B66EF1FF0BC9100E5624A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		940B66F11FF0BC9100E5624A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -27,17 +31,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E38319C0013BF406A06BB1B3 /* Pods_Rekordbox_Cue_Converter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48EB61F3D895259D6ACCE679 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				48F8F479DCAEFC59FF99DC83 /* Pods_Rekordbox_Cue_Converter.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5A80F799A44DE2B044392C1C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1D30CC55DD2B9A58A65378CB /* Pods-Rekordbox Cue Converter.debug.xcconfig */,
+				7B3DF9E5782225B89D57841F /* Pods-Rekordbox Cue Converter.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		940B66E31FF0BC9000E5624A = {
 			isa = PBXGroup;
 			children = (
 				940B66EE1FF0BC9100E5624A /* Rekordbox Cue Converter */,
 				940B66ED1FF0BC9100E5624A /* Products */,
+				5A80F799A44DE2B044392C1C /* Pods */,
+				48EB61F3D895259D6ACCE679 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -68,9 +92,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 940B66FB1FF0BC9100E5624A /* Build configuration list for PBXNativeTarget "Rekordbox Cue Converter" */;
 			buildPhases = (
+				EC6BF9F13E7FB011FE6303D5 /* [CP] Check Pods Manifest.lock */,
 				940B66E81FF0BC9100E5624A /* Sources */,
 				940B66E91FF0BC9100E5624A /* Frameworks */,
 				940B66EA1FF0BC9100E5624A /* Resources */,
+				5EA22C0E9E8311D79290AF7C /* [CP] Embed Pods Frameworks */,
+				E6E548D88BFE05AB2C582117 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -127,6 +154,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5EA22C0E9E8311D79290AF7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rekordbox Cue Converter/Pods-Rekordbox Cue Converter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6E548D88BFE05AB2C582117 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Rekordbox Cue Converter/Pods-Rekordbox Cue Converter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC6BF9F13E7FB011FE6303D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		940B66E81FF0BC9100E5624A /* Sources */ = {
@@ -246,6 +321,7 @@
 		};
 		940B66FC1FF0BC9100E5624A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D30CC55DD2B9A58A65378CB /* Pods-Rekordbox Cue Converter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
@@ -260,6 +336,7 @@
 		};
 		940B66FD1FF0BC9100E5624A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7B3DF9E5782225B89D57841F /* Pods-Rekordbox Cue Converter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				COMBINE_HIDPI_IMAGES = YES;
